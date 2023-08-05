@@ -1,0 +1,111 @@
+***coditional problem**
+1.
+length=int(input("enter length: ")) 
+breadth=int(input("enter breadth: "))
+if(length==breadth):
+    print("it is square")
+else:
+
+        print("it is not square")
+
+2.
+print("enter three values: \n")
+a=int(input())
+b=int(input())
+c=int(input())
+if(a>b & a>c):
+    print("large number is ",a)
+elif(b>a & b>c):
+    print("large number is ",b)
+else:
+    print("large number is ",c)
+3.
+a=int(input("number of class held:\n"))
+b=int(input("number of class attend:"))
+x=(b/a)*100
+if(x>=75):
+    print("allowed to sit in the exam")
+else:
+     print("not allowed to sit in the exam")
+    
+4.
+a=int(input("enter marks: "))
+if((a>=90) & (a<=100)):
+    print("A+")
+elif((a>=80) & (a<90)):
+    print("A")
+elif((a>=60) & (a<80)):
+    print("B")
+elif((a>=50) & (a<60)):
+    print("C")
+elif((a>=45) & (a<50)):
+    print("D")
+elif((a>=25) & (a<45)):
+    print("E")
+elif(a<25):
+    print("F")
+else:
+    print("error")
+
+*****loop**
+
+6.
+for i in range(-100,-9):
+    print(i)
+7.
+start=int(input())
+end=int(input())
+sum=0
+for i in range(start,end+1):
+    for j in range(2,i):
+        if(i%j==0):
+            break
+    else:
+        sum=sum+i
+print(sum)        
+
+8.
+n=int(input("enter a number: "))
+sum=1
+for i in range(1,n+1):
+    sum=sum*i
+print("factorial of ", n ,"is", sum)    
+
+9.
+n=int(input("enter a number: "))
+sum=0
+
+
+while n>0:
+   
+    sum=sum*10+n%10
+    n=n//10
+print(sum)    
+
+11.
+n=int(input("enter a number: "))
+x=0
+y=1
+z=0
+print(x)
+print(y)
+for i in range(3,n+1):
+    z=x+y
+    print(z)
+    x=y
+    y=z
+    
+
+n=int(input("enter a number: "))
+x=0
+y=1
+z=0
+print(x)
+print(y)
+i=3
+while i<=n:
+    z=x+y
+    print(z)
+    x=y
+    y=z
+    i=i+1
